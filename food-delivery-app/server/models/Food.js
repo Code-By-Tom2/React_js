@@ -7,3 +7,4 @@ const foodSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Food', foodSchema);
+//foood page
