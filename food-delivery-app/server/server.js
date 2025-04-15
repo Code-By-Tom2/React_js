@@ -22,4 +22,7 @@ mongoose.connect(process.env.MONGO_URI)
     );
   })
   .catch(err => console.error(err));
-//server
+  const authRoutes = require('./routes/authRoutes');
+
+  app.use('/api/auth', authRoutes);
+  
